@@ -1,0 +1,38 @@
+#loadingOverlay {
+    /* As linhas abaixos garantem que o elemento ocupe 100% do espaço da tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Fundo branco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Posiciona o spinner acima de todos os outros elementos HTML */
+    z-index: 9999;
+}
+    
+.spinner-border {
+    /* Aumenta o tamanho do spinner */
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    /* Altera a cor de fundo da página*/
+    background-color: rgb(195, 170, 243);
+}
+
+input[type="text"], select {
+    /* Altera a cor de fundo dos campos de texto (input)
+    e seletor de 'Estados' (select) */
+    /* Important é necessário para forçar a substituição 
+    das cores do seletor de 'Estados' (select) */
+    background-color: rgb(142, 121, 192) !important;
+    bortder: 1px solid rgb(142, 121, 192) !important;
+    color: black !important;
+}
+
+    imput[type="text"]::placeholder {
+        /* Altera a cor do texto de campus que não possuem informações preenchidas. */
+        color:black
+ }
